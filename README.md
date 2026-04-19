@@ -1,16 +1,54 @@
-# React + Vite
+# 🙏 Sistema de Gestão para Igrejas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sistema web desenvolvido para auxiliar na administração completa de igrejas, incluindo controle financeiro, membros, dízimos, ofertas e gestão organizacional.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 Funcionalidades
 
-## React Compiler
+### 👥 Gestão de Membros
+- Cadastro de membros
+- Atualização de dados
+- Controle de status (ativo/inativo)
+- Histórico de participação
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 💰 Financeiro
+- Registro de dízimos
+- Registro de ofertas
+- Controle de entradas e saídas
+- Relatórios financeiros
 
-## Expanding the ESLint configuration
+### 📊 Dashboard
+- Visão geral da igreja
+- Indicadores financeiros
+- Resumo de membros
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🔐 Autenticação
+- Login seguro
+- Controle de acesso por usuário
+- Proteção de rotas
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+### Frontend
+- React
+- Vite
+- CSS / Material UI
+
+### Backend
+- Node.js
+- Express
+
+### Banco de Dados
+-  MYSQL
+
+---
+
+## 🚀 Como rodar o projeto
+
+### 📥 Clonar o repositório
+
+```bash
+git clone https://github.com/paulobaltieri/andromeda.git
