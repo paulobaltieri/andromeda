@@ -42,11 +42,7 @@ Sistema web desenvolvido para auxiliar na administração completa de igrejas, i
 - Express
 
 ### Banco de Dados
-<<<<<<< HEAD
--  MYSQL
-=======
-- Mysql
->>>>>>> e5b43d5dd57bd0b06e77e7781e7dff5442e49351
+- MYSQL
 
 ---
 
@@ -55,8 +51,4 @@ Sistema web desenvolvido para auxiliar na administração completa de igrejas, i
 ### 📥 Clonar o repositório
 
 ```bash
-<<<<<<< HEAD
-git clone https://github.com/paulobaltieri/andromeda.git
-=======
-git clone https://github.com/paulobaltieri/andromeda.git
->>>>>>> e5b43d5dd57bd0b06e77e7781e7dff5442e49351
+git clone https://github.com/paulo/andromeda.git
