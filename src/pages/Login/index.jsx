@@ -7,7 +7,7 @@ export default function Login() {
                 display: "flex",
                 justifyContent: "center",
 
-                backgroundImage: "url('/birds.png')",
+                backgroundImage: "url('/birds.png')", // Papel de parede 
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
