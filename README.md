@@ -35,14 +35,14 @@ Sistema web desenvolvido para auxiliar na administração completa de igrejas, i
 ### Frontend
 - React
 - Vite
-- CSS / Tailwind (se usar)
+- CSS / Material UI
 
 ### Backend
 - Node.js
 - Express
 
 ### Banco de Dados
-- (Ex: PostgreSQL / MongoDB)
+- Mysql
 
 ---
 
@@ -51,4 +51,4 @@ Sistema web desenvolvido para auxiliar na administração completa de igrejas, i
 ### 📥 Clonar o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repo.git
+git clone https://github.com/paulobaltieri/andromeda.git
