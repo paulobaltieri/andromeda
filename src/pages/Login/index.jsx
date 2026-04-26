@@ -1,13 +1,20 @@
 import { Avatar, Box, Button, Card, CardContent, Link, TextField } from "@mui/material";
+import { toast } from "react-toastify";
+
 
 export default function Login() {
+    const handleLogin = () => {
+        toast.info("Email inválido");
+
+    }
+
     return (
         <Box
             sx={{
                 display: "flex",
                 justifyContent: "center",
 
-                backgroundImage: "url('/birds.png')", // Papel de parede 
+                backgroundImage: "url('/background.svg')", // Papel de parede 
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
@@ -31,7 +38,7 @@ export default function Login() {
                 <CardContent sx={{ mt: 5 }}>
                     <TextField fullWidth label="Username" margin="normal" size="small" />
                     <TextField fullWidth label="Password" type="password" margin="normal" size="small" />
-                    <Button variant="contained" color="primary" fullWidth sx={{ mt: 2 }}>
+                    <Button onClick={handleLogin} variant="contained" color="primary" fullWidth sx={{ mt: 2 }}>
                         Login
                     </Button>
                     <Box sx={{ display: "flex", justifyContent: "flex-end", mt: 1.2 }}>
