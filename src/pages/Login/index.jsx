@@ -1,11 +1,9 @@
 import { Avatar, Box, Button, Card, CardContent, Link, TextField } from "@mui/material";
 import { toast } from "react-toastify";
 
-
-export default function Login() {
+export default function Login() { // Toast ou alerta
     const handleLogin = () => {
         toast.info("Email inválido");
-
     }
 
     return (
@@ -33,7 +31,6 @@ export default function Login() {
                     }}
                 >
                     <h1>Login</h1>
-
                 </Avatar>
                 <CardContent sx={{ mt: 5 }}>
                     <TextField fullWidth label="Username" margin="normal" size="small" />
