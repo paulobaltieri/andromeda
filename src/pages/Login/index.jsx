@@ -1,4 +1,5 @@
-import { Avatar, Box, Button, Card, CardContent, Link, TextField } from "@mui/material";
+import { Avatar, Box, Button, Card, CardContent, Link, TextField, Typography } from "@mui/material";
+import UserPicture from "../../../public/avatar/avatar02.jpg"
 import { toast } from "react-toastify";
 
 export default function Login() { // Toast ou alerta
@@ -11,7 +12,6 @@ export default function Login() { // Toast ou alerta
             sx={{
                 display: "flex",
                 justifyContent: "center",
-
                 backgroundImage: "url('/background.svg')", // Papel de parede 
                 backgroundSize: "cover",
                 backgroundPosition: "center",
@@ -19,20 +19,25 @@ export default function Login() { // Toast ou alerta
                 minHeight: "90vh",
             }}
         >
-            <Card sx={{ height: 540, width: 400, mt: 25, borderRadius: 5 }}>
+            <Card sx={{ height: 580, width: 400, mt: 25, borderRadius: 5 }}>
                 <Avatar
                     sx={{
-                        height: 150,
-                        width: 140,
+                        height: 190,
+                        width: 190,
                         display: "flex",
                         justifyContent: "center",
                         margin: "0 auto",
                         mt: 5,
                     }}
                 >
-                    <h1>Login</h1>
+                    <img src={UserPicture} alt="imagem" />
                 </Avatar>
-                <CardContent sx={{ mt: 5 }}>
+                <Box sx={{ display: "flex", justifyContent: "center", mt: 3, fontWeight: "bold" }}> {/*Configuração do avatar */}
+                    <Typography variant="h4">
+                        Bem vindo
+                    </Typography>
+                </Box>
+                <CardContent sx={{ mt: 0.1 }}>
                     <TextField fullWidth label="Username" margin="normal" size="small" />
                     <TextField fullWidth label="Password" type="password" margin="normal" size="small" />
                     <Button onClick={handleLogin} variant="contained" color="primary" fullWidth sx={{ mt: 2 }}>
