@@ -1,10 +1,11 @@
 import { Avatar, Box, Button, Card, CardContent, Link, TextField, Typography } from "@mui/material";
 import UserPicture from "/avatar/avatar02.jpg"
-import { toast } from "react-toastify";
+import { showInfo } from "../../components/alert/AlertComponent.jsx"
 
 export default function Login() { // Toast ou alerta
+
     const handleLogin = () => {
-        toast.info("Email inválido");
+        showInfo("Email inválido");
     }
 
     return (
