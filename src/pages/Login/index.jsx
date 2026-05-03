@@ -1,5 +1,5 @@
 import { Avatar, Box, Button, Card, CardContent, Link, TextField, Typography } from "@mui/material";
-import UserPicture from "../../../public/avatar/avatar02.jpg"
+import UserPicture from "/avatar/avatar02.jpg"
 import { toast } from "react-toastify";
 
 export default function Login() { // Toast ou alerta
@@ -21,6 +21,7 @@ export default function Login() { // Toast ou alerta
         >
             <Card sx={{ height: 580, width: 400, mt: 25, borderRadius: 5 }}>
                 <Avatar
+                    src="/avatar/avatar02.jpg"
                     sx={{
                         height: 190,
                         width: 190,

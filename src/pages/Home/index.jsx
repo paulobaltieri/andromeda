@@ -1,6 +1,11 @@
+import MenuBar from "../../components/appbar/Appbar"
 
-export default function Login() {
+function Login() {
     return (
-        <h1>Página de Home</h1>
+        <>
+            <MenuBar />
+        </>
     )
 }
+
+export default Login
