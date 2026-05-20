@@ -1,13 +1,31 @@
 import { Avatar, Box, Button, Card, CardContent, Link, TextField, Typography } from "@mui/material";
+import { useState } from "react"
 import UserPicture from "/avatar/avatar02.jpg"
-import { showInfo } from "../../components/alert/AlertComponent.jsx"
+import { showError, showSucess } from "../../components/alert/AlertComponent.jsx"
 
-export default function Login() { // Toast ou alerta
+export default function Login() {
 
-    const handleLogin = () => {
-        showInfo("Email inválido");
+    const [password, setPassword] = useState("")
+    const [username, setUsername] = useState("")
+
+    const changePass = (event) => {
+        setPassword(event.target.value)
     }
 
+    const changeUsername = (event) => {
+        setUsername(event.target.value)
+    }
+
+    const handleLogin = () => {
+        if (password.length < 5) {
+            return showError("A senha precisa ser maior")
+        }
+        else if (username.length < 5) {
+            return showError("A usuario precisa ser maior")
+        }
+        showSucess("Login efetuado com sucesso!")
+
+    }
     return (
         <Box
             sx={{
@@ -40,8 +58,19 @@ export default function Login() { // Toast ou alerta
                     </Typography>
                 </Box>
                 <CardContent sx={{ mt: 0.1 }}>
-                    <TextField fullWidth label="Username" margin="normal" size="small" />
-                    <TextField fullWidth label="Password" type="password" margin="normal" size="small" />
+                    <TextField
+                        onChange={changeUsername}
+                        value={username}
+                        fullWidth label="Username"
+                        margin="normal"
+                        size="small" />
+                    <TextField
+                        onChange={changePass}
+                        value={password}
+                        fullWidth label="Password"
+                        type="password"
+                        margin="normal"
+                        size="small" />
                     <Button onClick={handleLogin} variant="contained" color="primary" fullWidth sx={{ mt: 2 }}>
                         Login
                     </Button>
