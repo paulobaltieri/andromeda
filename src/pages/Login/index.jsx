@@ -20,12 +20,12 @@ export default function Login() { // Toast ou alerta
                 minHeight: "90vh",
             }}
         >
-            <Card sx={{ height: 580, width: 400, mt: 25, borderRadius: 5 }}>
+            <Card sx={{ height: 540, width: 360, mt: 20, borderRadius: 5 }}>
                 <Avatar
                     src="/avatar/avatar02.jpg"
                     sx={{
-                        height: 190,
-                        width: 190,
+                        height: 150,
+                        width: 150,
                         display: "flex",
                         justifyContent: "center",
                         margin: "0 auto",
