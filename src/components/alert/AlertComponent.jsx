@@ -9,6 +9,6 @@ export function showError(message) {
     toast.error(message)
 }
 
-export function showSucess(message) {
+export function showSuccess(message) {
     toast.success(message)
 }

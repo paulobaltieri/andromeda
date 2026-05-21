@@ -1,7 +1,7 @@
 import { Avatar, Box, Button, Card, CardContent, Link, TextField, Typography } from "@mui/material";
 import { useState } from "react"
 import UserPicture from "/avatar/avatar02.jpg"
-import { showError, showSucess } from "../../components/alert/AlertComponent.jsx"
+import { showError, showSuccess } from "../../components/alert/AlertComponent.jsx"
 
 export default function Login() {
 
@@ -23,7 +23,7 @@ export default function Login() {
         else if (username.length < 5) {
             return showError("A usuario precisa ser maior")
         }
-        showSucess("Login efetuado com sucesso!")
+        showSuccess("Login efetuado com sucesso!")
 
     }
     return (
@@ -35,10 +35,11 @@ export default function Login() {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
-                minHeight: "90vh",
+                minHeight: "100vh",
             }}
         >
-            <Card sx={{ height: 540, width: 360, mt: 20, borderRadius: 5 }}>
+            {/*Form Login, aqui pode ser alterado a largura do card e o avatar */}
+            <Card sx={{ height: 540, width: 360, mt: 20, borderRadius: 5, boxShadow: "0px 0px 30px rgba(54, 134, 214, 0.38)" }}>
                 <Avatar
                     src="/avatar/avatar02.jpg"
                     sx={{
