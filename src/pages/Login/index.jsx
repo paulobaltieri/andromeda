@@ -9,6 +9,7 @@ import {
   Typography,
 } from "@mui/material";
 import { useState } from "react";
+import { LoadingButton } from "@mui/lab";
 import {
   showError,
   showSuccess,
@@ -34,7 +35,7 @@ export default function Login() {
       return showError("A usuario precisa ser maior");
     }
     showSuccess("Login efetuado com sucesso!");
-    setloadButton(true)
+    setloadButton(true);
   };
   return (
     <Box
@@ -68,8 +69,7 @@ export default function Login() {
             margin: "0 auto",
             mt: 5,
           }}
-        >
-        </Avatar>
+        ></Avatar>
         <Box
           sx={{
             display: "flex",
@@ -101,7 +101,8 @@ export default function Login() {
             size="small"
           />
           <Button
-            disabled ={loadButton}
+            loading={loadButton}
+            loadingIndicator="Carregando..." //
             onClick={handleLogin}
             variant="contained"
             color="primary"
